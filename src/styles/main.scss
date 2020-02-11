@@ -6,6 +6,8 @@
 
 // компоненты
 @import "components/index";
+@import "components/top-banner";
+@import "components/header";
 
 // паддинг секций (импортируем последним для правильного каскадирования стилей)
 @import "settings/padding";
