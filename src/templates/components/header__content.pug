@@ -24,7 +24,20 @@
                     br
                     |   и воспаление
         p.main__last    Количество акционных товаров ограниченно:
-            span.main__count    13
+            span.main__count.text-black    13
+        ul.main__medals
+            li.main__medal.main__medal--1
+                p.main__medal-text  Без побочных
+                    br
+                    | эффектов
+            li.main__medal.main__medal--2
+                p.main__medal-text  Контроль
+                    br
+                    | качества
+            li.main__medal.main__medal--3
+                p.main__medal-text  Запатентованая
+                    br
+                    | формула
     .main__form
         form.form.x_order_form(action="/submit" method="post")
 

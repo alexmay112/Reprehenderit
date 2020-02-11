@@ -24,6 +24,10 @@
   border-radius: 5px;
 }
 
+.main__list {
+  margin-bottom: 55px;
+}
+
 .main__item {
   padding: 0px 10px 0px 70px;
   background: url('../img/bulit.png') no-repeat 0 50%;
@@ -51,9 +55,33 @@
 
 .main__count {
   position: absolute;
-  
+  color: $content-color;
+  font-size: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
 }
 
+.main__medals {
+  display: flex;
+}
+
+.main__medal {
+  padding-left: 70px;
+
+  &--1 {
+    background: url("../img/icon-bottom1.png") no-repeat 0 50%;
+  }
+  &--2 {
+    background: url("../img/icon-bottom2.png") no-repeat 0 50%;
+  }
+  &--3 {
+    background: url("../img/icon-bottom3.png") no-repeat 0 50%;
+  }
+}
+.main__medal:not(:last-of-type) {
+  margin-right: 20px;
+}
 .form {
   width: 100%;
   max-width: 270px;
