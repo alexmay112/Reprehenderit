@@ -5,7 +5,11 @@
 @import "libs/index";
 
 // компоненты
-@import "components/index";
+@import "components/btn";
+@import "components/top-banner";
+@import "components/header";
+@import "components/reviews";
+
 
 // паддинг секций (импортируем последним для правильного каскадирования стилей)
 @import "settings/padding";
