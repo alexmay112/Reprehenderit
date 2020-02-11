@@ -24,10 +24,13 @@
                     br
                     |   и воспаление
         p.main__last    Количество акционных товаров ограниченно:
-            span.main__count.text-black    13
-        ul.main__medals
+            span.main__count.lastpack.text-black    13
+        .main__pack.pack
+            img.pack__img(src="img/pack.png", alt="Varilif")
+            img.pack__quality(src="img/quality_.png", alt="quality sign")
+        ul.main__medals.medals
             li.main__medal.main__medal--1
-                p.main__medal-text  Без побочных
+                p.main__medal-text  Без&nbsp;побочных
                     br
                     | эффектов
             li.main__medal.main__medal--2
@@ -39,5 +42,20 @@
                     br
                     | формула
     .main__form
+        p.form__approved    ОДОБРЕНО
+            br
+            | МИНЗДРАВОМ РФ
         form.form.x_order_form(action="/submit" method="post")
-
+            .form__top
+                p.form__attention   Внимание!
+                p.form__term    Только сегодня 
+                    span.date-1(data-format="dd month") 22 октября
+                span.form__free БЕСПЛАТНО!*
+            .form__input-wrap
+                input.form__input.form__input--name(type="text" name="name" required)
+            .form__input-wrap
+                input.form__input.form__input--tel(type="tel" name="phone" required)
+            button.form__button.btn Получить
+                br
+                |
+                span.form__button-free бесплатно
