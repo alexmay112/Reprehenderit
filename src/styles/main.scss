@@ -8,6 +8,7 @@
 @import "components/index";
 @import "components/top-banner";
 @import "components/header";
+@import "components/header__content";
 
 // паддинг секций (импортируем последним для правильного каскадирования стилей)
 @import "settings/padding";

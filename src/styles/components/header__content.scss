@@ -1,0 +1,60 @@
+.header__content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main__title {
+  margin-bottom: 35px;
+  font-size: 60px;
+  color: $content-color;
+}
+
+.main__content {
+  width: 100%;
+  max-width: 370px;
+}
+
+.main__attention {
+  margin-bottom: 50px;
+  padding: 10px 15px;
+  background: $content-color;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.main__item {
+  padding: 0px 10px 0px 70px;
+  background: url('../img/bulit.png') no-repeat 0 50%;
+}
+
+.main__item:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.main__text {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.main__last {
+  max-width: 230px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  position: relative;
+}
+
+.main__count {
+  position: absolute;
+  
+}
+
+.form {
+  width: 100%;
+  max-width: 270px;
+}
