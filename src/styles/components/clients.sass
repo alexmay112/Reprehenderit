@@ -1,0 +1,140 @@
+.clients
+	padding: 100px 0 70px
+	&-list
+		margin-top: 28px
+		+r(1219)
+			margin-top: 18px
+		+r(767)
+			margin-top: 10px
+		+r(639)
+			max-width: 370px
+			margin-left: auto
+			margin-right: auto
+	&-item
+		box-shadow: 0 0 17px rgba(2, 3, 3, 0.1)
+		border-radius: 5px
+		background-color: #ffffff
+		padding: 20px 20px 28px
+		+r(1219)
+			box-shadow: 0 0 12px rgba(2, 3, 3, 0.1)
+			padding: 15px 15px 20px
+		+r(1023)
+			padding: 15px 15px
+		+r(767)
+			box-shadow: 0 0 9px rgba(2, 3, 3, 0.1)
+	&-result
+		position: relative
+		max-width: 335px
+		margin-left: auto
+		margin-right: auto
+		&__before, &__after
+			width: 80px
+			height: 20px
+			color: #ffffff
+			font-size: 18px
+			font-weight: 500
+			line-height: 1
+			border-radius: 5px
+			background-color: #f7741e
+			text-align: center
+			+r(767)
+				width: 70px
+				font-size: 17px
+		&__after
+			background-color: #529e29
+			position: absolute
+			bottom: 10px
+			right: 75px
+			+r(1219)
+				right: 45px
+			+r(1023)
+				right: 10px
+		&__before
+			position: absolute
+			bottom: 10px
+			left: 10px
+			text-align: center
+	&__name
+		margin-top: 25px
+		text-align: center
+		color: #353434
+		font-size: 22px
+		font-weight: 700
+		line-height: 1
+		+r(1219)
+			margin-top: 15px
+			font-size: 20px
+		+r(1023)
+			margin-top: 12px
+		+r(639)
+			font-size: 19px
+		+r(479)
+			font-size: 18px
+.slick-slide
+	margin: 20px 15px
+	+r(1219)
+		margin: 15px 10px
+	+r(767)
+		margin: 10px 7px
+.slick-list
+	margin: 0 -15px
+	+r(1219)
+		margin: 0 -10px
+	+r(767)
+		margin: 0 -7px
+.slick-dots li button
+	width: 14px
+	height: 14px
+	background-color: #f9ecf1
+	border-radius: 50%
+.slick-dots li.slick-active button, .slick-dots li button:hover
+	background-color: #915169
+.slick-dots li button:hover
+	opacity: 0.7
+.slick-dots li.slick-active button:before
+	display: none
+.slick-dots li
+	width: 14px
+	height: 14px
+	margin: 0 9px
+	+r(639)
+		margin: 0 5px
+.slick-dots
+	margin-top: 20px
+	position: static
+	+r(1219)
+		margin-top: 10px
+	+r(767)
+		margin-top: 10px
+.arrow-left, .arrow-right
+	fill: #d7d7d7
+	position: absolute
+	top: 50%
+	transform: translateY(-135%)
+	transition: .3s
+	cursor: pointer
+	z-index: 10
+	&:hover
+		fill: #915169
+	+r(1292)
+		transform: translateY(268%)
+	+r(1219)
+		transform: translateY(225%)
+	+r(1023)
+		top: auto
+		transform: none
+		bottom: 52px
+	+r(767)
+		width: 32px
+.arrow-left
+	left: -76px
+	+r(1370)
+		left: -50px
+	+r(1292)
+		left: 20px
+.arrow-right
+	right: -76px
+	+r(1370)
+		right: -50px
+	+r(1292)
+		right: 20px
