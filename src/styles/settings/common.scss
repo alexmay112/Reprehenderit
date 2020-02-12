@@ -5,7 +5,9 @@ body {
 	font-size: 16px;
 	color: #444;
 }
-
+body, html{
+	overflow-x: hidden;
+}
 img {
   display: block;
   max-width: 100%;
@@ -52,6 +54,7 @@ button {
   font-weight: 900;
 	line-height: 1;
 	color: #332f2f;
+	text-align: center;
 
   @include r(1219) {
     font-size: 40px;
