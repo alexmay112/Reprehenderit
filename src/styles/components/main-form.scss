@@ -24,6 +24,11 @@
   @include r(1299) {
     left: -50px;
   }
+
+  @include r(479) {
+    top: -40px;
+    left: -26px;
+  }
 }
 
 .form__action-text {

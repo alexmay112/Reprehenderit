@@ -21,6 +21,10 @@
   @include r(1023) {
     text-align: center;
   }
+
+  @include r(479) {
+    font-size: 50px;
+  }
 }
 
 .main__content {
@@ -114,6 +118,12 @@
   @include r(639) {
     left: 300px;
   }
+
+  @include r(479) {
+    top: -13px;
+    left: 75px;
+  }
+
 }
 
 .main__attention {
@@ -174,6 +184,10 @@
     @include r(1023) {
       display: block;
     }
+
+    @include r(479) {
+      display: inline;
+    }
   }
 
   br {
@@ -216,6 +230,11 @@
   @include r(639) {
     margin-bottom: 10px;
   }
+
+  @include r(479) {
+    max-width: 270px;
+    margin: 0 auto 10px;
+  }
 }
 
 .main__count {
@@ -249,6 +268,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
     transform: translateX(0);
+  }
+
+  @include r(639) {
+    max-width: 210px;
+    margin: 0 auto 10px;
+    justify-content: flex-start;
   }
 }
 
