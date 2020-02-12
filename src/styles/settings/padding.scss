@@ -1,4 +1,7 @@
 .block {
+	@include r(1219) {
+    padding: 60px 0;
+  }
   @include r(1023) {
     padding: 40px 0;
   }
