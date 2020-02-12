@@ -1,5 +1,23 @@
-.promo__list {
-  display: flex;
-  max-width: 400px;
-  justify-content: space-between;
+// .promo__list {
+//   display: flex;
+//   max-width: 400px;
+//   justify-content: space-between;
+// }
+
+.promo {
+  position: relative;
+}
+
+.promo__pay {
+  padding: 37px 10px 0px;
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  left: 0;
+  bottom: 0;
+  font-size: 10px;
+  color: #ffffff;
+  line-height: 1.2;
+  border-top-right-radius: 100%;
+  background: #299e36 url("../img/icon-sberbank.png") no-repeat 10px 11px;
 }
