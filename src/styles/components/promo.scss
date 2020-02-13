@@ -1,6 +1,9 @@
 .promo {
   margin-bottom: 95px;
   position: relative;
+  @include r(1023) {
+    margin-bottom: 0px;
+  }
 }
 
 .promo__pay {
