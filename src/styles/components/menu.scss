@@ -138,11 +138,8 @@
 .menu {
   .header__info {
     margin-top: 30px;
-
-    @include r(1023) {
-      display: flex;
-      flex-wrap: wrap;
-    }
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .info__item:nth-child(1) .info__icon {
