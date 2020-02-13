@@ -115,3 +115,40 @@
     transform: rotate(-45deg);
   }
 }
+
+.menu__timer {
+  text-align: center;
+}
+
+.menu {
+  .header__info {
+    margin-top: 30px;
+
+    @include r(1023) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .info__item:nth-child(1) .info__icon {
+    margin-right: 10px;
+  }
+
+  .info__item:nth-child(2) .info__icon {
+    margin-right: 17px;
+  }
+
+  .info__item:not(:last-of-type) {
+    margin-bottom: 10px;
+    border-right: none;
+  }
+
+  .info__text br {
+    display: none;
+  }
+}
+
+.menu__btn {
+  max-width: 220px;
+  margin: 0 auto;
+}
