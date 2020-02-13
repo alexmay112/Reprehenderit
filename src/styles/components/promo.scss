@@ -1,10 +1,5 @@
-// .promo__list {
-//   display: flex;
-//   max-width: 400px;
-//   justify-content: space-between;
-// }
-
 .promo {
+  margin-bottom: 95px;
   position: relative;
 }
 
@@ -20,4 +15,16 @@
   line-height: 1.2;
   border-top-right-radius: 100%;
   background: #299e36 url("../img/icon-sberbank.png") no-repeat 10px 11px;
+
+  @include r(1219) {
+    right: 0;
+    left: auto;
+    text-align: right;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 100%;
+    background-position: 58px 10px;
+  }
+  @include r(767) {
+    display: none;
+  }
 }

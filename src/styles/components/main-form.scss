@@ -5,6 +5,11 @@
   font-size: 14px;
   line-height: 1.3;
   background: url('../img/ministry.png') no-repeat 12px 50%;
+
+  @include r(1299) {
+    padding-left: 120px;
+    background-position: 70px 50%;
+  }
 }
 
 .form__action {
@@ -15,6 +20,15 @@
   display: block;
   position: absolute;
   background: url('../img/action-bg.png') no-repeat;
+
+  @include r(1299) {
+    left: -50px;
+  }
+
+  @include r(479) {
+    top: -40px;
+    left: -26px;
+  }
 }
 
 .form__action-text {
