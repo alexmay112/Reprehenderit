@@ -1,11 +1,13 @@
 export default () => {
   function showMenu() {
     document.querySelector('.menu__overlay').style.display = 'block';
+    document.querySelector('.menu__wrapper').classList.add('active');
     document.querySelector('html').style.overflowY = 'hidden';
   }
 
   function closeMenu() {
     document.querySelector('.menu__overlay').style.display = 'none';
+    document.querySelector('.menu__wrapper').classList.remove('active');
     document.querySelector('html').style.overflowY = 'auto';
   }
 

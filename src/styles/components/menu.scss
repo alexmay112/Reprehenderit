@@ -70,11 +70,26 @@
 }
 
 .menu__wrapper {
+  // display: none;
   padding: 20px;
   max-width: 320px;
   height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
   background-color: #faeef3;
-  position: relative;
+  transform: translateX(-100%);
+  transition: all 1s;
+  z-index: 115;
+
+  &.active {
+    top: 0;
+    left: 0;
+    position: fixed;
+    transform: translateX(0);
+    z-index: 115;
+    transition: all 1s;
+  }
 }
 
 .menu__close {
