@@ -158,3 +158,39 @@
   font-size: 15px;
   background: url("../img/icon-secure.png") no-repeat 24px 50%;
 }
+
+.promo .form__reviews-amount {
+  margin-top: 23px;
+  padding-left: 154px;
+
+  &:before {
+    width: 119px;
+    left: 27px;
+    background: url(../img/star.png) repeat-x 0 50%;
+    background-size: 24px;
+  }
+
+  @include r(1023) {
+    margin-top: 0;
+    position: absolute;
+    left: -257px;
+    bottom: 60px;
+  }
+
+  @include r(767) {
+    left: -355px;
+    bottom: 3px;
+  }
+
+  @include r(639) {
+    margin-top: 15px;
+    position: relative;
+    left: 0;
+  }
+}
+
+.promo .reviews-amount__link {
+  font-size: 15px;
+  color: #444444;
+  text-decoration: underline;
+}

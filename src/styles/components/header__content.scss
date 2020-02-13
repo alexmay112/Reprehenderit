@@ -23,6 +23,7 @@
   }
 
   @include r(479) {
+    margin-bottom: 15px;
     font-size: 50px;
   }
 }
@@ -55,14 +56,24 @@
 }
 
 .main__form {
+  position: relative;
+
   @include r(1023) {
     max-width: 270px;
-    margin-bottom: 100px;
+    margin-bottom: 115px;
+  }
+
+  @include r(767) {
+    margin-bottom: 105px;
   }
 
   @include r(639) {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     max-width: none;
+  }
+
+  @include r(479) {
+    margin-bottom: 25px;
   }
 }
 
@@ -139,6 +150,10 @@
     margin: 0 auto 30px;
     text-align: center;
   }
+
+  @include r(479) {
+    font-size: 18px;
+  }
 }
 
 .main__list {
@@ -162,6 +177,11 @@
   @include r(1023) {
     padding: 0px 10px 0px 50px;
   }
+
+  @include r(479) {
+    padding: 7px 10px 7px 40px;
+    background-size: 30px;
+  }
 }
 
 .main__item:not(:last-of-type) {
@@ -173,6 +193,10 @@
 
   @include r(767) {
     margin-bottom: 15px;
+  }
+
+  @include r(479) {
+    margin-bottom: 7px;
   }
 }
 
@@ -194,6 +218,10 @@
     @include r(1023) {
       display: none;
     }
+  }
+
+  @include r(479) {
+    font-size: 16px;
   }
 }
 
@@ -297,6 +325,10 @@
     @include r(767) {
       background-position: 10px 0;
     }
+
+    @include r(479) {
+      background-position: 0px 0;
+    }
   }
 
   @include r(767) {
@@ -308,9 +340,17 @@
     margin-right: 0;
     margin-bottom: 10px;
   }
+
+  @include r(479) {
+    background-size: 50px;
+  }
 }
 
 .main__medal-text {
   font-size: 18px;
   line-height: 1.2;
+
+  @include r(479) {
+    font-size: 16px;
+  }
 }
