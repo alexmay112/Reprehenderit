@@ -17,6 +17,7 @@
   font-size: 60px;
   color: $content-color;
   letter-spacing: 3.6px;
+  text-align: left;
 
   @include r(1023) {
     text-align: center;
@@ -82,6 +83,7 @@
 }
 
 .pack__img {
+  width: 310px;
   position: absolute;
   bottom: -119px;
   left: -341px;
