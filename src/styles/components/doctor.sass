@@ -6,4 +6,48 @@
 		justify-content: center
 	&-text
 		max-width: 595px
+		width: 100%
 		margin-left: 85px
+		&__q
+			color: #000000
+			font-family: "PT Serif"
+			font-size: 20px
+			font-weight: 700
+			font-style: italic
+			line-height: 26px
+			margin-bottom: 10px
+		&__a
+			color: #444444
+			font-size: 18px
+			line-height: 28px
+			margin-bottom: 10px
+		&__name
+			color: #332f2f
+			font-size: 26px
+			font-weight: 700
+			line-height: 1
+			padding-top: 24px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 35px
+				height: 5px
+				background-color: #915169
+		&__post
+			margin-top: 15px
+			color: #666666
+			font-size: 17px
+			max-width: 295px
+			line-height: 24px
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				right: -307px
+				bottom: -16px
+				background: url(../img/sign.png) no-repeat center
+				width: 284px
+				height: 115px
