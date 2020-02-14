@@ -1,5 +1,5 @@
 .symptoms {
-  padding: 90px 0;
+  padding: 90px 0 135px;
 }
 
 .symptoms__subtitle {
@@ -14,6 +14,11 @@
   border-radius: 10px;
   position: relative;
 
+  @include r(1219) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
   @include r(1023) {
     flex-direction: column;
     align-items: center;
@@ -23,11 +28,14 @@
     margin-top: 50px;
     padding-bottom: 80px;
   }
+
   @include r(639) {
     padding-bottom: 60px;
   }
+
   @include r(479) {
     margin-top: 30px;
+    margin-bottom: 30px;
     border: none;
   }
 }
@@ -81,7 +89,7 @@
   }
 
   @include r(479) {
-    top: -78px;
+    top: -65px;
   }
 }
 
@@ -246,7 +254,7 @@
       border-bottom: none;
       padding-bottom: 28px;
     }
-    
+
     @include r(479) {
       margin-bottom: 10px;
       border-bottom: 1px solid #dfe2e3;
