@@ -5,14 +5,15 @@ import menu from './modules/menu.js';
 import reviews from './modules/reviews.js';
 import clients from './modules/clients.js';
 import footer from './modules/footer.js';
+import stat from './modules/stat.js';
 
 function main () {
   scrollSmooth();
-	// example();
 	menu();
 	reviews();
 	clients();
 	footer();
+	stat();
 }
 
 main();
