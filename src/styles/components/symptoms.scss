@@ -7,7 +7,7 @@
 }
 
 .symptoms-content {
-  margin-top: 50px;
+  margin-top: 83px;
   padding: 58px 5px 80px;
   display: flex;
   border: 1px solid #dfe2e3;
@@ -21,6 +21,15 @@
   position: relative;
 }
 
+.symptoms-title__wrap {
+  padding: 0 20px;
+  position: absolute;
+  top: -86px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+
 .symptoms-title {
   width: 280px;
   padding: 16px 20px;
@@ -30,14 +39,23 @@
   position: relative;
   font-size: 20px;
   font-weight: 500;
-  position: absolute;
-  top: -86px;
-  left: 50%;
   background-color: #fff;
-  transform: translateX(-50%);
   z-index: 0;
 
-  &::before {
+  // &::before {
+  //   content: "";
+  //   width: 320px;
+  //   height: 60px;
+  //   position: absolute;
+  //   top: -10px;
+  //   left: 50%;
+  //   border: 1px solid;
+  //   transform: translateX(-50%);
+  //   background-color: #fff;
+  //   z-index: -10;
+  // }
+
+  &::after {
     content: "";
     width: 20px;
     height: 20px;
@@ -48,19 +66,7 @@
     border-bottom: 2px solid #ff3612;
     background-color: #fff;
     transform: translateX(-50%) rotate(40deg) skewX(-10deg);
-  }
 
-  &::after {
-    content: "";
-    width: 320px;
-    height: 60px;
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    border: 1px solid;
-    transform: translateX(-50%);
-    background-color: #fff;
-    z-index: -10;
   }
 }
 
@@ -108,13 +114,19 @@
   color: #222222;
 }
 
-.symptoms__footer {
-  padding: 17px 105px;
+.symptoms__footer-wrap {
+  width: 640px;
+  padding: 0 20px;
   position: absolute;
   bottom: -51px;
   left: 50%;
-  border-radius: 10px;
   transform: translateX(-50%);
+  background-color: #fff;
+}
+
+.symptoms__footer {
+  padding: 17px 85px;
+  border-radius: 10px;
   background-color: #fbc6c6;
   text-align: center;
   font-size: 28px;
@@ -131,4 +143,107 @@
     transform: translateX(-50%) rotate(40deg) skewX(-10deg);
     background-color: #fbc6c6;
   }
+}
+
+.symptoms__slider {
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.symptoms__slider .symptoms__arrow-wrap {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #915169;
+  transform: translateY(-90px);
+
+  &:hover {
+    background-color: #ff3612;
+  }
+}
+
+.symptoms__arrow {
+
+  &-left,
+  &-right {
+    fill: #fff;
+  }
+}
+
+.symptoms__arrow-wrap.arrow-left {
+  left: -5px;
+}
+
+.symptoms__arrow-wrap.arrow-right {
+  right: -5px;
+}
+
+.symptoms__photo {
+  margin: 0 auto;
+}
+
+.symptoms__slider-navigation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+  li {
+    width: 140px;
+    height: 120px;
+    border: 2px solid transparent;
+    position: relative;
+
+    button {
+      font-size: 0;
+      background-color: #fff;
+    }
+
+    &:nth-child(1) {
+      background: url("../img/symptoms1_.png") no-repeat 50%;
+      background-size: 137px;
+    }
+
+    &:nth-child(2) {
+      background: url("../img/symptoms2_.png") no-repeat 50%;
+      background-size: 137px;
+    }
+
+    &:nth-child(3) {
+      background: url("../img/symptoms3_.png") no-repeat 50%;
+      background-size: 137px;
+    }
+  }
+
+  .slick-active {
+    border-radius: 18px;
+    border: 3px solid #915169;
+    overflow: hidden;
+  }
+}
+
+.symptoms__slider-navigation li:not(:last-of-type) {
+  margin-right: 18px;
+}
+
+.symptoms__description {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.description__item {
+  width: 140px;
+  margin-right: 18px;
+}
+
+.description__item:last-child {
+  margin-right: 0;
+}
+
+.description__text {
+  font-size: 20px;
+  text-align: center;
 }
