@@ -4,9 +4,36 @@ section.symptoms.block
 		p.symptoms__subtitle.subtitle присмотритесь к этим симптомам
 		.symptoms-content
 			.visible
-				h3.symptoms-title Видимые симптомы
+				.symptoms-title__wrap.symptoms-title__wrap--visible
+					h3.symptoms-title Видимые симптомы
+				.symptoms__slider
+					.symptoms__slide
+						img.symptoms__photo(src="img/symptoms1.png", alt="Сосудистые звездочки")
+						p.description__text--mob Сосудистые
+							br
+							| звездочки
+					.symptoms__slide
+						img.symptoms__photo(src="img/symptoms2.png", alt="Отеки")
+						p.description__text--mob Отеки 
+					.symptoms__slide
+						img.symptoms__photo(src="img/symptoms3.png", alt="Выступающие вены")
+						p.description__text--mob Выступающие 
+							br
+							| вены
+				ul.symptoms__description
+					li.description__item
+						p.description__text Сосудистые
+							br
+							| звездочки
+					li.description__item
+						p.description__text Отеки
+					li.description__item
+						p.description__text Выступающие
+							br
+							| вены
 			.unvisible
-				h3.symptoms-title Невидимые симптомы
+				.symptoms-title__wrap.symptoms-title__wrap--unvisible
+					h3.symptoms-title Невидимые симптомы
 				ul.unvisible__list
 					li.unvisible__item
 						p.unvisible__text Боль при ходьбе
@@ -25,10 +52,11 @@ section.symptoms.block
 					li.unvisible__item
 						p.unvisible__text Онемение
 					li.unvisible__item
-						p.unvisible__text Тяжесть в ногах
+						p.unvisible__text Тяжесть в&nbsp;ногах
 					li.unvisible__item
-						p.unvisible__text Боль в состоянии покоя
-			p.symptoms__footer Любой из этих симптомов&nbsp;- 
-				br
-				| признак варикоза
+						p.unvisible__text Боль в&nbsp;состоянии покоя
+			.symptoms__footer-wrap
+				p.symptoms__footer Любой из этих симптомов&nbsp;- 
+					br
+					| признак варикоза
 
