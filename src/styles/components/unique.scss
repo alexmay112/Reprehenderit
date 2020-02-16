@@ -14,6 +14,7 @@
   display: flex;
 
   @include r(767) {
+    margin-top: 20px;
     flex-direction: column;
   }
 }
@@ -32,6 +33,7 @@
   }
 
   @include r(767) {
+    margin-bottom: 40px;
     max-width: none;
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +55,15 @@
     background-position: 50% 15px;
   }
 
+  @include r(639) {
+    max-width: 220px;
+    background-color: #fff;
+  }
+
+  @include r(479) {
+    max-width: none;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -67,11 +78,29 @@
       top: 0px;
       left: 195px;
     }
+
+    @include r(639) {
+      left: 160px;
+    }
+
+    @include r(479) {
+      left: calc(50% + 50px);
+    }
   }
 }
 
 .unique-list__item:nth-child(1) {
   background-image: url("../img/unique1.png");
+
+  @include r(767) {
+    margin-bottom: 0;
+    order: 1;
+  }
+
+  @include r(479) {
+    margin-bottom: 20px;
+    order: 0;
+  }
 }
 
 .unique-list__item:nth-child(2) {
@@ -121,6 +150,11 @@
   @include r(767) {
     text-align: center;
   }
+
+  @include r(639) {
+    font-size: 16px;
+    line-height: 1.2;
+  }
 }
 
 .unique__img {
@@ -144,7 +178,10 @@
     position: relative;
     top: 0;
     left: 0;
+  }
 
+  @include r(639) {
+    max-width: 200px;
   }
 }
 
@@ -163,6 +200,20 @@
     top: 40px;
     left: 217px;
   }
+
+  @include r(767) {
+    top: -10px;
+    left: 380px;
+  }
+
+  @include r(639) {
+    left: 300px;
+  }
+
+  @include r(479) {
+    max-width: 60px;
+    left: calc(50% + 50px);
+  }
 }
 
 .unique__certificate {
@@ -180,13 +231,46 @@
     max-width: 110px;
     left: 72px;
   }
+
+  @include r(767) {
+    top: -5px;
+    left: 140px;
+  }
+
+  @include r(639) {
+    display: none;
+  }
 }
 
 .unique__footer {
   margin-top: 40px;
+
+  @include r(767) {
+    margin-top: 30px;
+  }
+
+  @include r(639) {
+    margin-top: 20px;
+  }
 }
 
 .unique__footer-text {
   text-align: center;
   font-size: 30px;
+
+  @include r(1023) {
+    font-size: 28px;
+  }
+
+  @include r(767) {
+    font-size: 26px;
+  }
+
+  @include r(639) {
+    font-size: 24px;
+  }
+
+  @include r(479) {
+    font-size: 20px;
+  }
 }
