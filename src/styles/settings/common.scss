@@ -144,5 +144,8 @@ button {
 
 .section-bg {
   background: url("../img/bg.jpg") no-repeat;
-  background-size: cover;
+	background-size: cover;
+	@include r(1023){
+		background-image: url(../img/adaptive-bg.jpg)
+	}
 }

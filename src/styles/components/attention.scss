@@ -12,7 +12,8 @@
     }
 
     @include r(1023) {
-      bottom: 0;
+			bottom: 0;
+			background-image: url(../img/adaptive-bg.jpg)
     }
 
     [class^=date-] {
