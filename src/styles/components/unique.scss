@@ -194,7 +194,7 @@
   }
 
   @include r(1023) {
-    max-width: 80px;
+    max-width: 74px;
     top: 40px;
     left: 217px;
   }
@@ -205,7 +205,8 @@
   }
 
   @include r(639) {
-    left: 300px;
+    width: 60px;
+    left: 280px;
   }
 
   @include r(479) {
