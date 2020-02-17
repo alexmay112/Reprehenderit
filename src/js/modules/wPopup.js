@@ -3,15 +3,15 @@ export default () => {
 
     document.querySelector('.promo__pay').style.bottom = '0' + 'px';
 
-    $(window).on("scroll", function () {
+    $(window).on("scroll load", function () {
       if (($(window).scrollTop() > $('.symptoms').offset().top) && ($(window).scrollTop() < $('.fakes').offset().top)) {
         $(".wPopup").fadeIn();
 
         // window.addEventListener(`resize`, event => {
         if (document.documentElement.clientWidth < 768) {
-          document.querySelector('.promo__pay').style.bottom = '55' + 'px';
+          document.querySelector('.promo__pay').style.bottom = '51' + 'px';
         } else {
-          document.querySelector('.promo__pay').style.bottom = '91' + 'px';
+          document.querySelector('.promo__pay').style.bottom = '87' + 'px';
         }
         // }, false);
 
