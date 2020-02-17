@@ -194,3 +194,10 @@
   color: #444444;
   text-decoration: underline;
 }
+
+.x_price_previous,
+.x_price_current,
+.x_currency {
+  font-size: 0;
+  visibility: hidden;
+}
