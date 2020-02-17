@@ -17,6 +17,12 @@
   }
 }
 
+.unique__right {
+  @include r(767) {
+    display: none;
+  }
+}
+
 .unique-list {
   max-width: 570px;
   padding-left: 70px;
@@ -31,7 +37,7 @@
   }
 
   @include r(767) {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     max-width: none;
     display: flex;
     flex-wrap: wrap;
@@ -245,10 +251,6 @@
   margin-top: 40px;
 
   @include r(767) {
-    margin-top: 30px;
-  }
-
-  @include r(639) {
     margin-top: 20px;
   }
 }

@@ -19,4 +19,13 @@ export default () => {
       closeMenu();
     }
   }, false);
+
+  let overlay = document.querySelector('.menu__overlay');
+
+
+  document.addEventListener('click', function(e){
+    if (e.target == overlay) {
+      closeMenu();
+    }
+  })
 };

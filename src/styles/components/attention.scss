@@ -16,9 +16,7 @@
     }
 
     [class^=date-] {
-      @include r(1219) {
-        // display: block;
-      }
+      @include r(1219) {}
 
       @include r(1023) {
         display: inline;

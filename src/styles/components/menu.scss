@@ -79,7 +79,7 @@
   position: fixed;
   background-color: #faeef3;
   transform: translateX(-100%);
-  transition: all 1s;
+  transition: all .5s;
   z-index: 115;
 
   &.active {
@@ -88,7 +88,7 @@
     position: fixed;
     transform: translateX(0);
     z-index: 115;
-    transition: all 1s;
+    transition: all .5s;
   }
 }
 
