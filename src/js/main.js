@@ -7,6 +7,7 @@ import reviews from './modules/reviews.js';
 import clients from './modules/clients.js';
 import footer from './modules/footer.js';
 import stat from './modules/stat.js';
+import wPopup from './modules/wPopup.js';
 
 function main () {
   scrollSmooth();
@@ -16,6 +17,7 @@ function main () {
 	clients();
 	footer();
 	stat();
+	wPopup();
 }
 
 main();
