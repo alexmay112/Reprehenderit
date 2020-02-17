@@ -20,6 +20,10 @@
   color: #000000;
 }
 
+.timer__cell:last-of-type {
+  margin-right: 0;
+}
+
 .timer__colon {
   margin-right: 3px;
   font-family: "Open sans";
