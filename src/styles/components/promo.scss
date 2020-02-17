@@ -1,6 +1,7 @@
 .promo {
   margin-bottom: 115px;
   position: relative;
+
   @include r(1023) {
     margin-bottom: 0px;
   }
@@ -8,26 +9,36 @@
 
 .promo__pay {
   padding: 37px 10px 0px;
-  position: absolute;
-  width: 90px;
-  height: 80px;
+  position: fixed;
   left: 0;
   bottom: 0;
+  width: 90px;
+  height: 80px;
   font-size: 10px;
   color: #ffffff;
   line-height: 1.2;
   border-top-right-radius: 100%;
   background: #299e36 url("../img/icon-sberbank.png") no-repeat 10px 11px;
+  z-index: 100;
 
-  @include r(1219) {
-    right: 0;
-    left: auto;
-    text-align: right;
-    border-top-right-radius: 0%;
-    border-top-left-radius: 100%;
-    background-position: 58px 10px;
+  @include r(1348) {
+    // bottom: 91px;
   }
+
+  // @include r(1219) {
+  //   right: 0;
+  //   left: auto;
+  //   text-align: right;
+  //   border-top-right-radius: 0%;
+  //   border-top-left-radius: 100%;
+  //   background-position: 58px 10px;
+  // }
+
   @include r(767) {
+    bottom: 55px;
+  }
+
+  @include r(639) {
     display: none;
   }
 }

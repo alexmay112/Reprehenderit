@@ -136,6 +136,7 @@
 }
 
 [class^="date-"] {
+  display: inline-block;
   text-transform: lowercase;
 }
 
@@ -161,13 +162,14 @@
 
 .promo .form__reviews-amount {
   margin-top: 23px;
-  padding-left: 154px;
+  padding-left: 37px;
 
   &:before {
-    width: 119px;
-    left: 27px;
-    background: url(../img/star.png) repeat-x 0 50%;
-    background-size: 24px;
+    display: none;
+    // width: 119px;
+    // left: 27px;
+    // background: url(../img/star.png) repeat-x 0 50%;
+    // background-size: 24px;
   }
 
   @include r(1023) {
@@ -187,6 +189,17 @@
     position: relative;
     left: 0;
   }
+}
+
+.promo .reviews-amount__star {
+  width: 120px;
+  height: 20px;
+  margin-right: 5px;
+  display: inline-block;
+  background: url(../img/star.png) repeat-x 0 50%;
+  background-size: 24px;
+  position: relative;
+  bottom: -2px;
 }
 
 .promo .reviews-amount__link {
