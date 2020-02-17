@@ -39,6 +39,7 @@
 		z-index: 0
 		margin-bottom: 11px
 		margin-top: auto
+		height: 100%
 		+r(1219)
 			margin-bottom: 22px
 		+r(1023)
@@ -124,6 +125,7 @@
 			height: 18px
 			border: 2px solid #ffffff
 			background-color: #f7741e
+			background-clip: content-box
 			animation: improve 1.1s infinite linear
 			animation-direction: alternate
 			border-radius: 50%
@@ -165,3 +167,8 @@
 		text-align: left
 	.composition-item-info
 		margin-left: 10px
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	.composition .composition-line::before
+		animation: none
+		animation-direction: none
