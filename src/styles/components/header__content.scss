@@ -107,6 +107,10 @@
     position: static;
     margin: 0 auto;
   }
+
+  @include r(479) {
+    width: 200px;
+  }
 }
 
 .pack__quality {
@@ -133,8 +137,9 @@
   }
 
   @include r(479) {
+    width: 60px;
     top: -13px;
-    left: 75px;
+    left: 185px;
   }
 
 }

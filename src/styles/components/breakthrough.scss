@@ -90,6 +90,14 @@
   margin-bottom: 26px;
   font-size: 18px;
   line-height: 26px;
+
+  @include r(767) {
+    font-size: 17px;
+  }
+
+  @include r(479) {
+    font-size: 16px;
+  }
 }
 
 .breakthrough__text:last-child {
