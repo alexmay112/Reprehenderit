@@ -8,7 +8,9 @@
     z-index: 95;
     padding: 5px 0 3px ;
     width: 100%;
-
+@include r(767){
+	padding: 5px 0 7px ;
+}
     .container {
         display: flex;
         justify-content: space-between;

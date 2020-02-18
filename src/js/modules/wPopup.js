@@ -9,7 +9,7 @@ export default () => {
 
         // window.addEventListener(`resize`, event => {
         if (document.documentElement.clientWidth < 768) {
-          document.querySelector('.promo__pay').style.bottom = '52' + 'px';
+          document.querySelector('.promo__pay').style.bottom = '56' + 'px';
         } else {
           document.querySelector('.promo__pay').style.bottom = '88' + 'px';
         }
