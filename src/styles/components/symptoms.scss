@@ -376,6 +376,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
   border-radius: 100px;
   background-color: #915169;
   transform: translateY(-90px);
@@ -405,37 +406,95 @@
   }
 }
 
-.symptoms__arrow-wrap.arrow-left {
+.symptoms__arrow-wrap--left,
+.symptoms__arrow-wrap--right {
+  top: 180px;
+  z-index: 10;
+
+  @include r(1023) {
+    top: 250px;
+  }
+
+  @include r(639) {
+    top: 210px;
+  }
+
+  @include r(479) {
+    top: 80px;
+  }
+}
+
+.symptoms__arrow-wrap--left {
   left: -5px;
 
+  @include r(1219) {
+    left: -16px;
+  }
+
+  @include r(1023) {
+    left: -7px;
+  }
+
   @include r(639) {
-    left: -20px;
+    left: -18px;
   }
 
   @include r(479) {
-    left: -50px;
-  }
-
-  @include r(389) {
-    left: 0px;
+    left: -15px;
   }
 }
 
-.symptoms__arrow-wrap.arrow-right {
+.symptoms__arrow-wrap--right {
   right: -5px;
 
+  @include r(1219) {
+    right: -16px;
+  }
+
+  @include r(1023) {
+    right: -7px;
+  }
+
   @include r(639) {
-    right: -20px;
+    right: -18px;
   }
 
   @include r(479) {
-    right: -50px;
-  }
-
-  @include r(389) {
-    right: 0px;
+    right: -15px;
   }
 }
+
+// .symptoms__arrow-wrap.arrow-left {
+//   left: -5px;
+
+//   @include r(639) {
+//     left: -20px;
+//   }
+
+//   @include r(479) {
+//     left: -50px;
+//   }
+
+//   @include r(389) {
+//     left: 0px;
+//   }
+// }
+
+// .symptoms__arrow-wrap.arrow-right {
+//   right: -5px;
+
+//   @include r(639) {
+//     right: -20px;
+//   }
+
+//   @include r(479) {
+//     right: -50px;
+//   }
+
+//   @include r(389) {
+//     right: 0px;
+//   }
+// }
 
 .symptoms__photo {
   margin: 0 auto;
