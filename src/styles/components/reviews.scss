@@ -331,18 +331,20 @@
 			margin-top: 15px;
 			
 			 }
-    &:before {
-      content: "";
-      position: absolute;
-      top: 13px;
-      left: 20px;
-      background: url(../img/message.jpg) no-repeat center;
-      width: 17px;
-			height: 18px;
-			z-index: 10;
-    }
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 13px;
+    //   left: 20px;
+    //   background: url(../img/message.jpg) no-repeat center;
+    //   width: 17px;
+		// 	height: 18px;
+		// 	z-index: 10;
+		// 	display: block;
+    // }
     &-input {
-      padding-top: 9px;
+			padding-top: 9px;
+			background: url(../img/message.jpg) 18px 15% no-repeat;
       border-radius: 5px;
       border: 1px solid #dfe2e3;
       background-color: #ffffff;
