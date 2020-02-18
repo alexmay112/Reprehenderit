@@ -167,8 +167,8 @@
 
 .unvisible__item {
   width: 170px;
-  margin-bottom: 24px;
-  padding: 10px 0 28px;
+  // margin-bottom: 24px;
+  padding: 30px 0;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #dfe2e3;
@@ -182,6 +182,7 @@
     width: 190px;
     margin-right: 0px;
     margin-bottom: 10px;
+    padding: 20px 0;
   }
 
   @include r(639) {
@@ -190,6 +191,7 @@
 
   @include r(479) {
     width: 210px;
+    margin-bottom: 0;
   }
 
   &::before {
@@ -198,7 +200,9 @@
     left: -56px;
     width: 36px;
     height: 32px;
-    top: 4px;
+    // top: 4px;
+    top: 50%;
+    transform: translateY(-50%);
     background: url('../img/icon-attention.png') no-repeat 50%;
 
     @include r(1219) {
@@ -235,13 +239,13 @@
   &:nth-child(9),
   &:nth-child(10) {
     margin-bottom: 0;
-    padding-bottom: 10px;
+    // padding-bottom: 10px;
     border-bottom: none;
   }
 
   &:nth-child(9) {
     @include r(1023) {
-      margin-bottom: 24px;
+      // margin-bottom: 24px;
       border-bottom: 1px solid #dfe2e3;
     }
 
@@ -256,9 +260,8 @@
     }
 
     @include r(479) {
-      margin-bottom: 10px;
+      margin-bottom: 0px;
       border-bottom: 1px solid #dfe2e3;
-
     }
   }
 
