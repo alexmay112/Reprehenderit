@@ -211,11 +211,13 @@
     margin-bottom: 7px;
   }
 }
-
+.main__text .text-bold{
+	color: #353434;
+}
 .main__text {
   font-size: 20px;
   line-height: 1.2;
-
+	color: #666666;
   span {
     @include r(1023) {
       display: block;

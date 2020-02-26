@@ -69,14 +69,16 @@
   }
 
   .form__input-wrap {
-    max-width: 265px;
+		max-width: 265px;
+		margin-bottom: 25px;
 
     @include r(1219) {
       max-width: 205px;
     }
 
     @include r(1023) {
-      max-width: 265px;
+			max-width: 265px;
+			margin-bottom: 15px;
     }
   }
 
