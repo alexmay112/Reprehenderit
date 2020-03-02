@@ -43,18 +43,9 @@
     color: #403737;
     font-size: 16px;
     line-height: 1;
-    padding-left: 157px;
+    padding-left: 20px;
     position: relative;
-    &:before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-57%);
-      left: 0;
-      width: 142px;
-      height: 23px;
-      background: url(../img/star.png) repeat-x center;
-    }
+
   }
   &-btn {
     max-width: 223px;
@@ -477,4 +468,22 @@
 }
 textarea{
 	-ms-overflow-style: none;
+}
+
+.reviews-headStar{
+	width: 120px;
+	height: 20px;
+	background: url(../img/star.png) repeat-x left center;
+	background-size: 25px 20px;
+	position: relative;
+	&:before{
+		content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/star-un.png) repeat-x left center;
+    background-size: 25px 20px;
+    width: 122px;
+    height: 100%;
+	}
 }
