@@ -162,7 +162,7 @@
 
 .promo .form__reviews-amount {
   margin-top: 23px;
-  padding-left: 37px;
+  padding-left: 29px;
 
   &:before {
     display: none;
@@ -175,12 +175,12 @@
   @include r(1023) {
     margin-top: 0;
     position: absolute;
-    left: -257px;
+    left: -263px;
     bottom: 60px;
   }
 
   @include r(767) {
-    left: -355px;
+    left: -350px;
     bottom: 3px;
   }
 
@@ -191,12 +191,17 @@
   }
 }
 
+.reviews-amount__wrap {
+  display: flex;
+  align-items: center;
+}
+
 .promo .reviews-amount__star {
   width: 120px;
   height: 20px;
   margin-right: 5px;
   display: inline-block;
-  background: url(../img/star.png) repeat-x 0 50%;
+  // background: url(../img/star.png) repeat-x 0 50%;
   background-size: 24px;
   position: relative;
   bottom: -2px;
